@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+
+  .container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-image: url("481ca0217dd5442e9d9fe2d9dbb120cc.jpg");
+    background-size: cover;
+    cursor: pointer;
+  }
+
+  .hidden-text {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+  }
+
+  .container.active {
+    background-image: url("54ec42089db841788724e30355b07de6.jpg");
+  }
+
+  .container.active .hidden-text {
+    display: block;
+  }
